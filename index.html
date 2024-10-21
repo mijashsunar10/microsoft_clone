@@ -8,21 +8,45 @@
 </head>
 <body>
     <div class="navbar flex justify-between items-center p-4">
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center md:order-2">
         <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
             <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search">
+        <div class="search md:hidden ">
             SearchIcon
 
         </div>
         </div>
 
-        <div class="logo text-center">Microsoft</div>
+        <div class="logo text-center md:order-1 flex">
+            <div>Microsoft</div>
 
-        <div class="cart text-center">Cart Account</div>
+            <div class="features md:flex md:mx-4 md:space-x-2 w-fit md:auto inset-0 hidden">
+                <div class="fitem">Microsoft 365</div>
+                <div class="fitem">Teams</div>
+                <div class="fitem">Copilot </div>
+                <div class="fitem">Windows </div>
+                <div class="fitem">Surface </div>
+                <div class="fitem">Xbox </div>
+                <div class="fitem">Deals </div>
+                <div class="fitem">Support </div>
+            </div>
+        </div>
+
+        <div class="cart text-center md:order-3 flex">
+            <div class="search hidden md:block ">
+                All Microsoft
+                SearchIcon
+    
+            </div>
+
+            <div>
+                Cart Account
+            </div>
+           
+        </div>
 
 
 
